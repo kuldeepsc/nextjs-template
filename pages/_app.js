@@ -1,5 +1,46 @@
+import App from "next/app";
+// import GlobalContext from "src/helper/GlobalContext";
+import {GlobalStore} from "../src/GlobalStore";
+import Script from "next/script";
+import Head from 'next/head';
+import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/globals.css'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+export default class MyApp extends App {
+    state = {
+        pageProps: this.props.pageProps
+    };
+
+    updatePageProps = (pageProps) => {
+        this.setState({ pageProps });
+    };
+
+  static async getInitialProps({ Component, ctx }) {
+    let pageProps= {};
+    const isMobile=false;
+    pageProps.pageCommonProps ={
+      isMobile,
+      lang: 'english',
+    }
+
+    return { pageProps };
+  }
+  render(){
+      const { Component } = this.props;
+      const { pageProps } = this.state;
+    return (
+        <>
+            <Head><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" /></Head>
+            <GlobalStore>
+                <Component {...pageProps} />
+            </GlobalStore>
+            <Script strategy="afterInteractive" id="page">{`
+                console.log('page... ');            
+            `}
+            </Script>
+        </>
+
+    );
+  }
 }
