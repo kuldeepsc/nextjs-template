@@ -1,6 +1,5 @@
 
-
-const equityProps = async (context, isMobile = false, pageType = "") => {
+const homeProps = async (context, isMobile = false, pageType = "") => {
 
     const pageData = {
         isMobile,
@@ -9,4 +8,4 @@ const equityProps = async (context, isMobile = false, pageType = "") => {
     return { props: { pageData } };
 }
 
-export default equityProps;
+export default homeProps;
