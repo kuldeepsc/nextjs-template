@@ -37,7 +37,7 @@ const About = (data = {}) => {
                             <button type="button" className="btn btn-outline-secondary btn-lg px-4">Secondary</button>
                         </div>
                     </div>
-                    <div className="overflow-hidden" style={{'max-height': '30vh'}}>
+                    <div className="overflow-hidden" style={{'maxHeight': '30vh'}}>
                         <div className="container px-5">
                             <img src="/site/images/bootstrap-docs.png"
                                  className="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700"

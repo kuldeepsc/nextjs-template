@@ -37,7 +37,7 @@ function Home(data = {}) {
               <a href={base_url('register')}><button type="button" className="btn btn-primary btn-lg px-4">Create an Account</button></a>
             </div>
           </div>
-          <div className="overflow-hidden" style={{ 'max-height': '30vh' }}>
+          <div className="overflow-hidden" style={{ 'maxHeight': '30vh' }}>
             <div className="container px-5">
               <img
                 src="/site/images/bootstrap-docs.png"
