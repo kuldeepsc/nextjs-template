@@ -32,12 +32,12 @@ function Home(data = {}) {
               <a href={base_url('about')}>
                 <button type="button" className="btn btn-outline-secondary btn-lg px-4 me-sm-3">
                   Know More
-</button>
+                </button>
               </a>
               <a href={base_url('register')}><button type="button" className="btn btn-primary btn-lg px-4">Create an Account</button></a>
             </div>
           </div>
-          <div className="overflow-hidden" style={{ 'maxHeight': '30vh' }}>
+          <div className="overflow-hidden" style={{ maxHeight: '30vh' }}>
             <div className="container px-5">
               <img
                 src="/site/images/bootstrap-docs.png"
@@ -118,11 +118,11 @@ function Home(data = {}) {
               <form className="p-4 p-md-5 border rounded-3 bg-light">
                 <div className="form-floating mb-3">
                   <input
-                        type="email"
-                        className="form-control"
-                        id="floatingInput"
-                        placeholder="name@example.com"
-                      />
+                    type="email"
+                    className="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
                   <label htmlFor="floatingInput">Email address</label>
                 </div>
                 <button className="w-100 btn btn-lg btn-primary" type="button">Subscribe Now</button>
@@ -151,7 +151,7 @@ function Home(data = {}) {
               <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <button type="button" className="btn btn-danger text-white btn-lg px-4 me-sm-3">
                   Connect With Us
-</button>
+                </button>
                 <button type="button" className="btn text-bg-light btn-lg px-4">Download Now</button>
               </div>
             </div>
@@ -170,24 +170,24 @@ function Home(data = {}) {
                 <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                   <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bootstrap users since the beginning</h3>
                   <ul className="d-flex list-unstyled mt-auto">
-                        <li className="me-auto">
-                            <img
-                                src="https://github.com/twbs.png"
-                                alt="Bootstrap"
-                                width="32"
-                                height="32"
-                                className="rounded-circle border border-white"
-                              />
-                          </li>
-                        <li className="d-flex align-items-center me-3">
-                            <svg className="bi me-2" width="1em" height="1em" />
-                            <small>Earth</small>
-                          </li>
-                        <li className="d-flex align-items-center">
-                            <svg className="bi me-2" width="1em" height="1em" />
-                            <small>3d</small>
-                          </li>
-                      </ul>
+                    <li className="me-auto">
+                      <img
+                        src="https://github.com/twbs.png"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        className="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li className="d-flex align-items-center me-3">
+                      <svg className="bi me-2" width="1em" height="1em" />
+                      <small>Earth</small>
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <svg className="bi me-2" width="1em" height="1em" />
+                      <small>3d</small>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -200,24 +200,24 @@ function Home(data = {}) {
                 <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                   <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Deep understanding of Bootstrap</h3>
                   <ul className="d-flex list-unstyled mt-auto">
-                        <li className="me-auto">
-                            <img
-                                src="https://github.com/twbs.png"
-                                alt="Bootstrap"
-                                width="32"
-                                height="32"
-                                className="rounded-circle border border-white"
-                              />
-                          </li>
-                        <li className="d-flex align-items-center me-3">
-                            <svg className="bi me-2" width="1em" height="1em" />
-                            <small>India</small>
-                          </li>
-                        <li className="d-flex align-items-center">
-                            <svg className="bi me-2" width="1em" height="1em" />
-                            <small>4d</small>
-                          </li>
-                      </ul>
+                    <li className="me-auto">
+                      <img
+                        src="https://github.com/twbs.png"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        className="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li className="d-flex align-items-center me-3">
+                      <svg className="bi me-2" width="1em" height="1em" />
+                      <small>India</small>
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <svg className="bi me-2" width="1em" height="1em" />
+                      <small>4d</small>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -230,24 +230,24 @@ function Home(data = {}) {
                 <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                   <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Expertise in React.Js</h3>
                   <ul className="d-flex list-unstyled mt-auto">
-                        <li className="me-auto">
-                            <img
-                                src="https://github.com/twbs.png"
-                                alt="Bootstrap"
-                                width="32"
-                                height="32"
-                                className="rounded-circle border border-white"
-                              />
-                          </li>
-                        <li className="d-flex align-items-center me-3">
-                            <svg className="bi me-2" width="1em" height="1em" />
-                            <small>California</small>
-                          </li>
-                        <li className="d-flex align-items-center">
-                            <svg className="bi me-2" width="1em" height="1em" />
-                            <small>5d</small>
-                          </li>
-                      </ul>
+                    <li className="me-auto">
+                      <img
+                        src="https://github.com/twbs.png"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        className="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li className="d-flex align-items-center me-3">
+                      <svg className="bi me-2" width="1em" height="1em" />
+                      <small>California</small>
+                    </li>
+                    <li className="d-flex align-items-center">
+                      <svg className="bi me-2" width="1em" height="1em" />
+                      <small>5d</small>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

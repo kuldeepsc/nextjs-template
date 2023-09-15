@@ -1,13 +1,13 @@
 import dynamic from 'next/dynamic';
 import { base_url } from '../../helper/site.helper';
-import { LazyLoad, withLazyLoad } from '../../utils/LazyLoad';
+// import { LazyLoad, withLazyLoad } from '../../utils/LazyLoad';
 import OnScrollLoad from '../../utils/OnScrollLoad';
 import ErrorBoundaryComponent from '../../utils/ErrorBoundaryComponent';
 
 const BootStrapModal = dynamic(import('../../elements/modal'));
 
-const TableFilter = dynamic(import('../../components/desktop/examples/TableFilter'));
-const TableFilterWithLazy = withLazyLoad(TableFilter);
+// const TableFilter = dynamic(import('../../components/desktop/examples/TableFilter'));
+// const TableFilterWithLazy = withLazyLoad(TableFilter);
 
 function Footer({}) {
   const tableData = [
@@ -18,8 +18,8 @@ function Footer({}) {
 
   return (
     <>
-      <TableFilterWithLazy data={tableData} />
-      <LazyLoad><h2>WithLazyLoad Loaded</h2></LazyLoad>
+    {/*  <TableFilterWithLazy data={tableData} />
+      <LazyLoad><h2>WithLazyLoad Loaded</h2></LazyLoad> */}
       <OnScrollLoad offset={10}>
         {/* Login Modal */}
         <ErrorBoundaryComponent>
