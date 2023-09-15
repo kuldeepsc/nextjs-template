@@ -1,5 +1,4 @@
-export const ardorArraySortByColumn = (arr, colIndex, filterType = 'default',sortOrder='asc') => {
-
+const ardorArraySortByColumn = (arr, colIndex, filterType = 'default', sortOrder = 'asc') => {
   const ardorSortFunction = (a, b) => {
     if (filterType === 'number') {
       const aVal = (a[colIndex]) ? parseInt(a[colIndex], 10) : 0;
@@ -16,6 +15,25 @@ export const ardorArraySortByColumn = (arr, colIndex, filterType = 'default',sor
     return (a[colIndex] < b[colIndex]) ? -1 : 1;
   };
   arr.sort(ardorSortFunction);
-  return (sortOrder==='desc')?arr.reverse():arr;
+  return (sortOrder === 'desc') ? arr.reverse() : arr;
 };
 
+const searchArray = (array, key, value) => {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i][key] === value) {
+      return array[i];
+    }
+  }
+  return null; // return null if no match is found
+};
+
+const searchArrayFilter = (array, key, value) => {
+  const resultArray = array.filter((subArray) => subArray[key] === value);
+  return resultArray.length > 0 ? resultArray : null;
+};
+
+export {
+  ardorArraySortByColumn,
+  searchArray,
+  searchArrayFilter,
+};

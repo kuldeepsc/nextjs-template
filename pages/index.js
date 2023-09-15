@@ -1,18 +1,24 @@
-import dynamic from "next/dynamic";
-const DesktopLayout = dynamic(import("../src/layouts/deskop/DesktopLayout"));
-import HomeDesktop from "../src/components/desktop/index";
+import dynamic from 'next/dynamic';
+import homeProps from '../shelper/homeProps';
+import ErrorBoundary from '../src/utils/ErrorBoundary';
 
-const Home = ({ pageData }) => {
+const DesktopLayout = dynamic(import('../src/layouts/deskop/DesktopLayout'));
+const HomePageComponent = dynamic(import('../src/components/desktop/home/Home'));
+
+function Home({ pageData }) {
   return (
-      <>
-        {/* <DesktopLayout
-            data={pageData}
-            mainComponent={HomeDesktop}
-            pageType="home"
-        /> */}
-          <HomeDesktop/>
-      </>
-  )
+    <ErrorBoundary>
+      <DesktopLayout
+        data={pageData}
+        mainComponent={HomePageComponent}
+        pageType="microsite"
+      />
+    </ErrorBoundary>
+  );
+}
+
+export async function getServerSideProps(context) {
+  return homeProps(context, false, 'market');
 }
 
 export default Home;

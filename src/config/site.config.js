@@ -15,11 +15,11 @@ switch (isEnv) {
         siteEnv = '';
         break;
     case 'development':
-        siteUrl = 'http://localhost:3050/';
+        siteUrl = 'http://localhost:3070/';
         siteEnv = 'dev';
         break;
     case 'default':
-        siteUrl = 'http://localhost:3050/';
+        siteUrl = 'http://localhost:3070/';
         siteEnv = 'dev';
         break;
 }
