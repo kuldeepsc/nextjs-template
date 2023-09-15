@@ -28,15 +28,19 @@ function Footer({}) {
               <form className="">
                 <div className="form-floating mb-3">
                   <input
-                      type="email" className="form-control rounded-3" id="floatingEmail"
-                      placeholder="name@ardorsys.com"
+                    type="email"
+                    className="form-control rounded-3"
+                    id="floatingEmail"
+                    placeholder="name@ardorsys.com"
                   />
                   <label htmlFor="floatingEmail">Email address</label>
                 </div>
                 <div className="form-floating mb-3">
                   <input
-                      type="password" className="form-control rounded-3" id="floatingPassword"
-                      placeholder="Password"
+                    type="password"
+                    className="form-control rounded-3"
+                    id="floatingPassword"
+                    placeholder="Password"
                   />
                   <label htmlFor="floatingPassword">Password</label>
                 </div>

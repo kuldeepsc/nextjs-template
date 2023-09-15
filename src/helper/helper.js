@@ -18,7 +18,7 @@ const ardorArraySortByColumn = (arr, colIndex, filterType = 'default', sortOrder
   return (sortOrder === 'desc') ? arr.reverse() : arr;
 };
 
-const searchArray = (array, key, value) =>{
+const searchArray = (array, key, value) => {
   for (let i = 0; i < array.length; i++) {
     if (array[i][key] === value) {
       return array[i];
@@ -28,10 +28,9 @@ const searchArray = (array, key, value) =>{
 };
 
 const searchArrayFilter = (array, key, value) => {
-  const resultArray = array.filter(subArray => subArray[key] === value);
+  const resultArray = array.filter((subArray) => subArray[key] === value);
   return resultArray.length > 0 ? resultArray : null;
-}
-
+};
 
 export {
   ardorArraySortByColumn,
