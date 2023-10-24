@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+### A beautiful Starter UI Kit in NextJS.
+
+Start your development with a Free ArdorNext and NextJS UI Kit and bootstrap. Let ArdorNext NextJS amaze you with its cool features and build tools and get your project to a whole new level.
+
+ArdorNext NextJS is Free and Open Source. It features multiple HTML and NextJS elements and it comes with dynamic components for NextJS.
+
+It is based on [Bootstrap & JSX]
+
 ## Getting Started
 
 First, run the development server:
