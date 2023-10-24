@@ -4,7 +4,7 @@ import Footer from './Footer';
 import DesktopLayoutStyle from '../../../styles/desktop/DesktopLayoutStyle';
 
 function DesktopLayout(props) {
-  const { mainComponent: MainComponent, pageType} = props;
+  const { mainComponent: MainComponent, pageType } = props;
   useEffect(() => {
     console.log('pageType... ', pageType);
   });

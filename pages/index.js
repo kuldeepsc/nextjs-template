@@ -18,6 +18,7 @@ function Home({ pageData }) {
 }
 
 export async function getServerSideProps(context) {
+    console.log("homepaage.... ");
   return homeProps(context, false, 'market');
 }
 

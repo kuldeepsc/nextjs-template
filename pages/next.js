@@ -1,18 +1,20 @@
-import dynamic from "next/dynamic";
-const DesktopLayout = dynamic(import("../src/layouts/deskop/DesktopLayout"));
-import HomeDesktop from "../src/components/desktop/index";
+import dynamic from 'next/dynamic';
+import HomeDesktop from '../src/components/desktop/index';
 
-const NextHome = ({ pageData }) => {
+const DesktopLayout = dynamic(import('../src/layouts/deskop/DesktopLayout'));
+
+function NextHome({ pageData }) {
+  console.log('NextHome......');
   return (
-      <>
-        {/* <DesktopLayout
+    <>
+      {/* <DesktopLayout
             data={pageData}
             mainComponent={HomeDesktop}
             pageType="home"
         /> */}
-          <HomeDesktop/>
-      </>
-  )
+      <HomeDesktop />
+    </>
+  );
 }
 
 export default NextHome;
